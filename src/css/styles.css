@@ -10,9 +10,21 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* main {
 
-} */
+.container {
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  margin: auto;
+}
+
+
+.header-container {
+  display: flex;
+  justify-content: space-between;  
+  align-items: center;  
+  width: 100%;
+}
 
 .contato {
   display: flex;
@@ -50,13 +62,150 @@ body {
 }
 
 .contato p:last-child {
-  display: flex; /*Alinhando horizontalmente as imagens em relação ao <p>*/
+  display: flex; /* Alinhei horizontalmente as imagens em relação na tag <p> */
 }
 
 .contato p:last-child img {
-  margin-left: 5px; /*Adicionando espaço entre imagens*/
+  margin-left: 5px; /* Adicionei espaço entre imagens */
 }
+
 .contato img {
   width: 25px;
   height: 25px;
+}
+
+
+.menu-topo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu-topo ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.menu-topo a {
+  color: inherit;
+  color: #737373;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+ 
+}
+
+.menu-topo a:hover {
+  color: black;
+}
+
+.header-btn {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header-btn img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.header-btn span {
+  font-weight: bold;
+  color: #23A6F0;
+}
+
+.separator {
+  margin: 0 5px;
+}
+
+.header-btn:hover {
+  opacity: 0.8;
+}
+
+.header-btn:focus {
+  outline: 2px solid #0056b3;
+}
+
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px; 
+}
+
+.header-icons {
+  display: flex;
+  gap: 25px;
+}
+
+.header-icons img {
+  width: 24px;
+  height: 24px;
+}
+
+.header-container {
+  padding: 35px 30px 0px 30px;
+}
+
+.dropdown-arrow {
+  display: inline-block;   
+  margin-left: 5px;         
+  font-size: 20px;          
+  transform: rotate(-90deg); 
+  transition: transform 0.3s ease; 
+}
+
+.menu-topo ul li a:hover .dropdown-arrow {
+  transform: rotate(90deg);
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+}
+
+.hero button {
+  background-color: #23A6F0;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.hero button:hover {
+  background-color: rgb(36, 192, 243);
+  color: rgb(230, 230, 230);
+  cursor: pointer;
+  transform: translateY(-5px);  /* Move o botão para cima */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);  /* Adiciona sombra */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container .hero{
+  border: 1px solid red;
+  background: linear-gradient(90deg, #96E9FB 0%, #ABECD6 100%);
+  border-radius: 5px;
 }
