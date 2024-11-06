@@ -185,8 +185,8 @@ body {
   background-color: rgb(36, 192, 243);
   color: rgb(230, 230, 230);
   cursor: pointer;
-  transform: translateY(-5px);  /* Move o botão para cima */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);  /* Adiciona sombra */
+  transform: translateY(-5px); 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
 }
 
 
@@ -209,3 +209,4 @@ body {
   background: linear-gradient(90deg, #96E9FB 0%, #ABECD6 100%);
   border-radius: 5px;
 }
+ 
