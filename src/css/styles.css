@@ -7,9 +7,8 @@
 body {
   width: 100%;
   margin: auto;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 }
-
 
 .container {
   display: flex;
@@ -18,11 +17,17 @@ body {
   margin: auto;
 }
 
+section {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  margin: 100px;
+}
 
 .header-container {
   display: flex;
-  justify-content: space-between;  
-  align-items: center;  
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
 }
 
@@ -74,7 +79,6 @@ body {
   height: 25px;
 }
 
-
 .menu-topo {
   display: flex;
   justify-content: space-around;
@@ -92,7 +96,6 @@ body {
   text-decoration: none;
   font-weight: bold;
   padding: 10px;
- 
 }
 
 .menu-topo a:hover {
@@ -117,7 +120,7 @@ body {
 
 .header-btn span {
   font-weight: bold;
-  color: #23A6F0;
+  color: #23a6f0;
 }
 
 .separator {
@@ -132,11 +135,10 @@ body {
   outline: 2px solid #0056b3;
 }
 
-
 .header-actions {
   display: flex;
   align-items: center;
-  gap: 15px; 
+  gap: 15px;
 }
 
 .header-icons {
@@ -154,11 +156,11 @@ body {
 }
 
 .dropdown-arrow {
-  display: inline-block;   
-  margin-left: 5px;         
-  font-size: 20px;          
-  transform: rotate(-90deg); 
-  transition: transform 0.3s ease; 
+  display: inline-block;
+  margin-left: 5px;
+  font-size: 20px;
+  transform: rotate(-90deg);
+  transition: transform 0.3s ease;
 }
 
 .menu-topo ul li a:hover .dropdown-arrow {
@@ -170,43 +172,234 @@ body {
   align-items: center;
 }
 
-.hero button {
-  background-color: #23A6F0;
+.hero-button {
+  background-color: #23a6f0;
   color: white;
   text-transform: uppercase;
   font-weight: bold;
-  padding: 15px;
+  padding: 20px;
   border-radius: 5px;
   border: none;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  width: 200px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
 }
 
 .hero button:hover {
   background-color: rgb(36, 192, 243);
   color: rgb(230, 230, 230);
   cursor: pointer;
-  transform: translateY(-5px); 
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.container .hero {
+  background: linear-gradient(90deg, #96e9fb 0%, #abecd6 100%);
+  border-radius: 15px;
+}
+
+.hero-text {
+  padding: 80px;
+}
+
+.hero-text h5{
+  color: #2A7CC7;
+}
+
+.hero-text h5, h1 {
+  text-transform: uppercase;
+}
+
+.hero h5, h4, h1, .hero-button{
+  margin-top: 25px;
+}
+
+.hero h1 {
+  font-size: 50px;
+}
+
+.hero h4 {
+  color: #737373;
+  word-wrap: break-word; 
+  overflow-wrap: break-word;
+  max-width: 65%; 
 }
 
 
+clients {
+  
+}
+.clients {
+  display: flex;
+  align-items: center;
+}
+
+.clients img {
+  width: 160px;
+}
+
+.clients img:nth-of-type(6):hover {
+  cursor: pointer;
+  background-color: orangered;
+  border-radius: 50px;
+
+}
+.clients img:nth-of-type(5):hover {
+  cursor: pointer;
+  background-color: rgb(5, 5, 137);
+  border-radius: 50px;
+
+}
+.clients img:nth-of-type(4):hover {
+  cursor: pointer;
+  background-color: rgb(123, 46, 217);
+  border-radius: 50px;
+}
+.clients img:nth-of-type(3):hover {
+  cursor: pointer;
+  background-color: greenyellow;
+  border-radius: 50px;
+}
+.clients img:nth-of-type(2):hover {
+  cursor: pointer;
+  background-color: rgb(187, 86, 205);
+  border-radius: 50px;
+}
+.clients img:nth-of-type(1):hover {
+  cursor: pointer;
+  background-color: rgb(79, 79, 255);
+  border-radius: 50px;
+}
+
+.shop-cards {
+  margin-top: 60px;
+}
+
+.shop-cards-elements {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 15px;
+}
+
+.left-model, .right-model {
+  display: flex;
+  flex-direction: column;
+}
+
+.image-overlay {
+  position: relative; 
+}
+
+.shop-cards-elements img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.image-overlay::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #2D8BC0BF; 
+  pointer-events: none; 
+  width: 68%;
+  height: 40%;
+}
 
 
+.right-model .image-overlay:nth-of-type(1)::after {
+  height: 65%; 
+}
 
+.right-model .image-overlay:nth-of-type(2)::after {
+  height: 60%; 
+}
 
+.right-model {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
 
+.image-overlay h4 {
+  position: absolute;
+  top: 105px;  
+  left: 40px;
+  font-size: 24px;  
+  color: white;  
+  z-index: 1; 
+  font-weight: normal;
+  
+}
 
+.left-model .image-overlay h3 {
+  position: absolute;
+  top: 400px;  
+  left: 40px; 
+  font-size: 24px; 
+  color: white;  
+  z-index: 1;  
+  font-weight: bolder;  
+  margin: 0;
 
+}
 
-
-
-
-
-
-
-.container .hero{
-  border: 1px solid red;
-  background: linear-gradient(90deg, #96E9FB 0%, #ABECD6 100%);
+.left-model .image-overlay button {
+  position: absolute;
+  padding: 20px;
+  background-color: transparent;
+  color: white;
+  text-transform: uppercase;
+  top: 500px;  
+  left: 40px; 
+  z-index: 1;  
+  font-weight: bolder;  
+  margin: 0;
+  border: 1px solid white;
   border-radius: 5px;
+  width: 200px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
- 
+
+.right-model .image-overlay button {
+  position: absolute;
+  padding: 20px;
+  background-color: transparent;
+  color: white;
+  text-transform: uppercase;
+  top: 180px;  
+  left: 40px; 
+  z-index: 1;  
+  font-weight: bolder;  
+  margin: 0;
+  border: 1px solid white;
+  border-radius: 5px;
+  width: 200px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.break-line {
+  display: block; 
+}
+
+
+.shop-cards button:hover {
+  background-color: rgb(36, 192, 243);
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+
+
+
+
