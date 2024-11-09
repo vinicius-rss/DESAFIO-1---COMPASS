@@ -67,11 +67,11 @@ section {
 }
 
 .contato p:last-child {
-  display: flex; /* Alinhei horizontalmente as imagens em relação na tag <p> */
+  display: flex; /*Alinhei horizontalmente as imagens em relação na tag <p> */
 }
 
 .contato p:last-child img {
-  margin-left: 5px; /* Adicionei espaço entre imagens */
+  margin-left: 5px; /*Adicionei espaço entre imagens */
 }
 
 .contato img {
