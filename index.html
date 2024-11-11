@@ -60,7 +60,7 @@
           <ul>
             <li><a href="">Home</a></li>
             <li>
-              <a href="">Shop<span class="dropdown-arrow">></span></a>
+              <a href="" class="shop-word">Shop<span class="dropdown-arrow">></span></a>
             </li>
             <li><a href="">About</a></li>
             <li><a href="">Blog</a></li>
@@ -105,6 +105,7 @@
               src="assets/images/hero.png"
               alt="imagem destaque do site"
               width="500px"
+              class="hero-image"
             />
           </div>
         </div>
@@ -358,9 +359,9 @@
             <div class="post-icons">
               <img src="assets/images/product-icon-clock.png" alt="Quantidade de Horas">
               <p>22h...</p>
-              <img src="assets/images/product-icon-lessons.png" alt="Quantidade de aulas">
-              <p>64 Lessons</p>
-              <img src="assets/images/product-icon-progress.png" alt="Progresso">
+              <img src="assets/images/product-icon-lessons.png" alt="Quantidade de aulas" class="lessons-icon">
+              <p class="lessons-text">64 Lessons</p>
+              <img src="assets/images/product-icon-progress.png" alt="Progresso" class="progress-icon">
               <p>Progress</p>
             </div>
             <button class="post-btn">Learn More ᐳ</button>
@@ -384,7 +385,7 @@
             <div class="sales-img">
               <img src="assets/images/sales-icon.png" alt="vendas" class="img-sales">
               <h6>15 Sales</h6>
-            </div>
+            </div> 
             <div class="post-prices">
               <span class="old-price">$16.48</span>
               <span class="promotional-price">$6.48</span>
@@ -395,9 +396,9 @@
             <div class="post-icons">
               <img src="assets/images/product-icon-clock.png" alt="Quantidade de horas">
               <p>22h...</p>
-              <img src="assets/images/product-icon-lessons.png" alt="Quantidade de aulas">
-              <p>64 Lessons</p>
-              <img src="assets/images/product-icon-progress.png" alt="Progresso">
+              <img src="assets/images/product-icon-lessons.png" alt="Quantidade de aulas" class="lessons-icon">
+              <p class="lessons-text">64 Lessons</p>
+              <img src="assets/images/product-icon-progress.png" alt="Progresso" class="progress-icon">
               <p>Progress</p>
             </div>
             <button class="post-btn">Learn More ᐳ</button>
@@ -462,14 +463,16 @@
           </div>
           <div class="info-email">
             <h5>Get in touch</h5>
-            <form>
+            <form id="subscribeForm">
               <div class="email-subscribe-wrapper">
-                <input type="email" placeholder="Your email" required>
+                <input type="" id="emailInput" placeholder="Your email">
                 <button type="submit" class="footer-btn">Subscribe</button>
               </div>
               <p>Lorem imp sum dolor Amit</p>
             </form>
-          </div>       
+            <div id="message" style="display:none;"></div>  
+          </div>
+            
         </div>
       </section>
   
