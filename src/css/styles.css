@@ -24,13 +24,6 @@
     margin: 100px;
   }
 
-  .header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-  }
-
   .contato {
     display: flex;
     align-items: center;
@@ -77,6 +70,13 @@
   .contato img {
     width: 25px;
     height: 25px;
+  }
+
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
   }
 
   .menu-topo {
@@ -328,7 +328,7 @@
   }
 
   .right-model .image-overlay:nth-of-type(2)::after {
-    height: 60%;
+    height: 60%;  
   }
 
   .right-model {
@@ -343,7 +343,7 @@
     top: 105px;
     left: 40px;
     font-size: 24px;
-    color: white;
+    color: white; 
     z-index: 1;
     font-weight: normal;
   }
